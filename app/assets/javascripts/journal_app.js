@@ -4,6 +4,8 @@ window.JournalApp = {
   Views: {},
   Routers: {},
   initialize: function() {
+    var router = new JournalApp.Routers.PostsRouter($('.journal-app'));
+    Backbone.history.start();
   }
 };
 
