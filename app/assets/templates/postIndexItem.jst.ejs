@@ -1,5 +1,5 @@
 <p>
-  Title: <%= post.escape("title") %>
+  Title: <a href="<%= "#/posts/" + post.id %>"><%= post.escape("title") %></a>
 </p>
 <button class="post-delete">Delete</button>
 <button class="post-edit">Edit</button>

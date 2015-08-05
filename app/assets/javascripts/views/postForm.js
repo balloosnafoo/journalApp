@@ -20,6 +20,7 @@ JournalApp.Views.PostForm = Backbone.View.extend({
     var frmJSON = $frm.serializeJSON();
 
     this.model.save(frmJSON.post, {
+      wait: true,
       success: function(model, response, options) {
         view.collection.add(model);
         Backbone.history.navigate("posts/" + model.get("id"), {trigger: true})
