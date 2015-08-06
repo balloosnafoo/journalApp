@@ -10,7 +10,7 @@ JournalApp.Views.PostShow = Backbone.View.extend({
   },
 
   initialize: function() {
-    this.model.fetch({reset: true});
+    // this.model.fetch({reset: true});
     this.listenTo(this.model, "sync", this.render)
   },
 

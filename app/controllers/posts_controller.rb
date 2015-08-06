@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(post_params)
     if @post.save
-      render :json => @post
+      render json: @post
     else
       render :json => @post.errors.full_messages
     end

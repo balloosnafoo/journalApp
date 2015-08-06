@@ -32,7 +32,9 @@ JournalApp.Routers.PostsRouter = Backbone.Router.extend({
       this._view.remove();
     }
     this._view = null;
-    this.$sidebar.html(this._indexView.render().$el);
+    // this.$sidebar.html(this._indexView.render().$el);
+    this._indexView.render();
+    // this._indexView.delegateEvents();
   },
 
   postShow: function(id) {
