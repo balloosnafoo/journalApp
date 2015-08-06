@@ -22,3 +22,4 @@
 //= require_tree ./routers
 //= require_tree .
 //= require jquery.serializejson
+//= require bootstrap
